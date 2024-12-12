@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="header-text">
+                <h1>To-Do List</h1>
+            </div>
+            <div class="header-typ">
+                <input type="text" id="task-input" maxlength="25" placeholder="Enter task (max 25 chars)">
+                <button id="add-task-btn">Add</button>
+            </div>
+            <div id="task-list">
+                <!-- Tasks will appear here -->
+            </div>
+            <button id="view-history-btn">View History</button>
+        </div>
+        <div id="history-modal" class="hidden">
+            <div class="history-container">
+                <h2>History</h2>
+                <ul id="history-list"></ul>
+                <button id="close-history-btn">Close</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
